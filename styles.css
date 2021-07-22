@@ -1,0 +1,95 @@
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    color: hsl(229, 6%, 66%);
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.5rem;
+}
+
+h1,
+h2 {
+    margin: 0;
+}
+
+.feature {
+    max-width: 375px;
+    margin: 10rem auto;
+}
+
+.feature__title {
+    font-size: 3rem;
+    font-weight: 200;
+    margin: 2rem auto;
+}
+
+.feature__title,
+.feature__card-title {
+    color: hsl(234, 12%, 34%);
+}
+
+.feature__title-highlight {
+    font-weight: 600;
+}
+
+.feature__text {
+    font-size: 1.8rem;
+    margin-bottom: 10rem;
+}
+
+.feature__title,
+.feature__text {
+    text-align: center;
+}
+
+.feature__card {
+    border-radius: 10px;
+    box-shadow: 0 0 25px 0 hsl(229, 6%, 66%);
+    cursor: pointer;
+    margin: 4rem auto;
+    overflow: hidden;
+    position: relative;
+    min-height: 25rem;
+    transition: transform 0.3s;
+}
+
+.feature__card:hover {
+    transform: scale(1.05);
+}
+
+.feature__card-accent {
+    height: 5px;
+}
+
+.feature__card-accent--red {
+    background-color: hsl(0, 78%, 62%);
+}
+
+.feature__card-accent--cyan {
+    background-color: hsl(180, 62%, 55%);
+}
+
+.feature__card-accent--orange {
+    background-color: hsl(34, 97%, 64%);
+}
+
+.feature__card-accent--blue {
+    background-color: hsl(212, 86%, 64%);
+}
+
+.feature__card-content {
+    padding: 2rem;
+}
+
+.feature__card-icon {
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+}

@@ -108,6 +108,10 @@ h2 {
         align-items: center;
     }
 
+    .feature__mid-level-cards {
+        margin: auto 2rem;
+    }
+
     .feature__card {
         height: 30rem;
         width: 40rem;

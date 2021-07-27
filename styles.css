@@ -52,16 +52,10 @@ h2 {
 .feature__card {
     border-radius: 10px;
     box-shadow: 0 0 25px 0 hsl(229, 6%, 66%);
-    cursor: pointer;
     margin: 4rem auto;
     overflow: hidden;
     position: relative;
     min-height: 25rem;
-    transition: transform 0.3s;
-}
-
-.feature__card:hover {
-    transform: scale(1.05);
 }
 
 .feature__card-accent {
@@ -92,4 +86,30 @@ h2 {
     position: absolute;
     bottom: 10%;
     right: 10%;
+}
+
+@media screen and (min-width:900px) {
+    .feature {
+        max-width: 1440px;
+    }
+
+    .feature__title {
+        font-size: 4rem;
+    }
+
+    .feature__text {
+        width: 60rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .feature__cards-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .feature__card {
+        height: 30rem;
+        width: 40rem;
+    }
 }
